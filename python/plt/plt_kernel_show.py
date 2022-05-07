@@ -14,4 +14,4 @@ def plt_test():
     kernel = gkern(l = 11, sig = 1)
     plt.axis('off')
     plt.imshow(kernel,cmap='binary_r',interpolation='bicubic')# binary_r binary
-    plt.savefig('kernel.png',bbox_inches='tight', pad_inches=0)
+    plt.savefig('./python/plt/kernel.png',bbox_inches='tight', pad_inches=0)
