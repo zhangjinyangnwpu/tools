@@ -11,7 +11,7 @@ def gkern(l=10, sig=1.):
     return kernel / np.sum(kernel)
 
 def plt_test():
-    kernel = gkern(l = 11, sig = 1)
+    kernel = gkern(l = 11, sig = 10)
     plt.axis('off')
     plt.imshow(kernel,cmap='binary_r',interpolation='bicubic')# binary_r binary
     plt.savefig('./python/plt/kernel.png',bbox_inches='tight', pad_inches=0)
